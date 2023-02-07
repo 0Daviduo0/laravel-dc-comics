@@ -1,6 +1,8 @@
 @extends('layouts.main-layout')
 
 @section('content')
+
+<a href="{{ route('person.add') }}"> -> Aggiungi Persona <-  </a>
     
 <ul>
     @foreach ($person as $people)

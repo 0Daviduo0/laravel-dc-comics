@@ -18,3 +18,6 @@ use App\Http\Controllers\MainController;
 //rotta pagina principale
 Route::get('/', [MainController :: class, 'homepage']) -> name('homepage');
 Route :: get('/people/delete/{id}', [MainController::class, 'personDelete']) -> name('person.delete');
+Route :: get('/people/add', [MainController::class, 'personAdd']) -> name('person.add');
+Route :: post('/people/todb', [MainController::class, 'personToDB']) -> name('person.ToDB');
+
